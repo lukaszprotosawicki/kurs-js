@@ -1,20 +1,19 @@
 const input = document.getElementById('pass');
 const div = document.querySelector('.message')
-const passwords = ["user", "wiosna"];
-const messages = ["wyjechałam na zawsze", "piękna pora roku"];
+const passwords = ["user", "wiosna", "Ania"];
+const messages = ["wyjechałam na zawsze", "piękna pora roku", "Fajny styl masz"];
 
 input.addEventListener('input', (e) => {
     // console.log(e.target.value);
     const text = e.target.value;
 
-    passwords.forEach( (password => {
-        if(password === text);
-        div.textContent = messages;
-
-    } )
+    passwords.forEach((password, index) => {
+        if (password === text) {
+        div.textContent = messages[index];
+        }
+    })
     
-
-
+    
 
 
 
