@@ -17,3 +17,4 @@ const height = window.innerHeight;
 document.body.style.backgroundColor = `rgb(${red}%, ${green}%, ${blue}%`
 
 })
+
