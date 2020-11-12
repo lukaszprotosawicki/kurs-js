@@ -4,13 +4,16 @@ const passwords = ["user", "wiosna", "Ania"];
 const messages = ["wyjechałam na zawsze", "piękna pora roku", "Fajny styl masz"];
 
 input.addEventListener('input', (e) => {
+    div.textContent = "";
     // console.log(e.target.value);
     const text = e.target.value;
 
     passwords.forEach((password, index) => {
         if (password === text) {
         div.textContent = messages[index];
+        e.target.value = '';
         }
+
     })
     
     
