@@ -15,3 +15,8 @@ div {
     font-size: 40px;
     margin: 20px;
 }
+
+.active {
+    background-color: black;
+    color: white;
+}
