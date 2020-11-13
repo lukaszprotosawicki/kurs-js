@@ -7,8 +7,11 @@ const addName = (e) => {
     const newName = input.value;
     if(input.value.length) {
         for(name of names) {
-            if(name === newName) 
-            return
+            if(name === newName) {
+                alert("to już jest!!!")
+                return
+            }
+
         }
     names.push(newName);
     // console.log(names);
