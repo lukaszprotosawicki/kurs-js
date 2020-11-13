@@ -10,12 +10,12 @@ html {
 
 
 body {
-    border: 8px solid lightgreen;
+    border: 8px solid rgb(32, 128, 255);
     border-radius: 20px;
     padding: 40px;
     width: 60%;
     height: 400px;
-    margin: 0 auto;
+    margin: 22vh auto ;
     background: url('img/wallpaper.jpg');
     background-size: 190vh;
 }
@@ -40,13 +40,13 @@ h2 {
 #alarm-container {
 	text-align:center;
     font-family: Verdana;
-    font-size: 0.6em;
+    font-size: 16px;
     padding: 0.7em;
     color: white;
 }
 
 label {
-	display:inline-block;
+    display:inline-block;
 }
 
 .timeofday {
@@ -65,19 +65,38 @@ label {
 
 #setButton {
     float:left;
-    background-color:lightgreen;
+    background-color:rgb(109, 233, 250);
     margin-top:10px;
     color: black;
     font-size: 16px;
+    font-weight: bold;
     border: 1px solid black;
     border-radius: 4px;
+    padding: 5px;
 }
+
+#setButton:hover {
+    background-color: rgb(18, 82, 167);
+    transition: 0.8s;
+    color: white;
+    cursor: pointer;
+}
+
 #clearButton {
     float:right;
     background-color:red;
     margin-top:10px;
     color: black;
     font-size: 16px;
+    font-weight: bold;
     border: 1px solid black;
     border-radius: 4px;
+    padding: 5px;
+}
+
+#clearButton:hover {
+    background-color: rgb(0, 0, 0);
+    transition: 0.8s;
+    color: white;
+    cursor: pointer;
 }
