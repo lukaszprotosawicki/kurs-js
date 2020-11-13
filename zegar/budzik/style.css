@@ -4,6 +4,7 @@
 
 html {
     padding-top:50px;
+
 }
 
 
@@ -16,6 +17,7 @@ body {
     height: 400px;
     margin: 0 auto;
     background: url('img/wallpaper.jpg');
+    background-size: 190vh;
 }
 
 #clock {
@@ -26,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  color: white;
+    color: white;
 }
 
 h2 {
@@ -40,7 +42,7 @@ h2 {
     font-family: Verdana;
     font-size: 0.6em;
     padding: 0.7em;
-  color: white;
+    color: white;
 }
 
 label {
@@ -65,9 +67,17 @@ label {
     float:left;
     background-color:lightgreen;
     margin-top:10px;
+    color: black;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
 }
 #clearButton {
     float:right;
     background-color:red;
     margin-top:10px;
+    color: black;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
 }
