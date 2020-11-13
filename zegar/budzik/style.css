@@ -17,7 +17,7 @@ body {
     height: 500px;
     margin: 22vh auto ;
     background: url('img/wallpaper.jpg');
-    background-size: 190vh;
+    background-size: 2000vh;
 }
 
 .bgc {
@@ -65,7 +65,7 @@ label {
 }
 
 .timeofday {
-    background-color: rgb(5, 3, 3)0, 0, 0);
+    background-color: rgb(5, 3, 3);
 }
 
 .bigger {
