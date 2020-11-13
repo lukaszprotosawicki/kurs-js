@@ -4,7 +4,7 @@ html {
 
 button {
     display: block;
-    max-width: 20px auto 50px;
+    margin: 50px auto 50px;
     background-color: #fff;
     border: 5px solid cadetblue;
     padding: 20px 50px;
