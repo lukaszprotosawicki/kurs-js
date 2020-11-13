@@ -1,4 +1,4 @@
-var sound = new Audio("http://www.kakofonia.pl/ENG/ENGtitan/Titanic1.wav");
+var sound = new Audio("https://www.freespecialeffects.co.uk/soundfx/animals/duck1.wav");
 		sound.loop = true;
 
 var h2 = document.getElementById('clock');
