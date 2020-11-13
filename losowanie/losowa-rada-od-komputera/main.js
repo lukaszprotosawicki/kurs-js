@@ -2,7 +2,8 @@ const options = ['opcja1', 'opcja2'];
 
 const addOption = (e) => {
     e.preventDefault();
-    document.querySelector('input').value
+    const input = document.querySelector('input')
+    options.push(input.value)
 }
 
 const resetOptions = (e) => {
