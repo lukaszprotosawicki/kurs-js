@@ -8,7 +8,7 @@ const addName = (e) => {
     if(input.value.length) {
         for(name of names) {
             if(name === newName) {
-                alert("to już jest!!!")
+                alert("to już jest!!!");
                 return
             }
 
