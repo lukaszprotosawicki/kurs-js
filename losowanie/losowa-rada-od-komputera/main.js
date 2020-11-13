@@ -4,6 +4,8 @@ const addOption = (e) => {
     e.preventDefault();
     const input = document.querySelector('input')
     options.push(input.value)
+    alert(`Dodana została opcja ${input.value}`);
+    input.value = "";
 }
 
 const resetOptions = (e) => {
