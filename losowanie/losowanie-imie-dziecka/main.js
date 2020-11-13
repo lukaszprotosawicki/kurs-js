@@ -7,7 +7,7 @@ const names = ["Beata", "Daria", "Karolina", "Lukasz", "Joanna", "Renata", "Bart
 // console.log(names[index]);
 
 const nameGenerator = () => {
-    const index = Math.floor(Math.random() * 8);
+    const index = Math.floor(Math.random() * names.length);
     div.textContent = `Najfajniejsze imie to ${names[index]}`
 }
 
