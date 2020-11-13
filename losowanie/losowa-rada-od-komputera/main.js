@@ -2,7 +2,7 @@ const options = ['opcja1', 'opcja2'];
 
 const showAdvice = () => {
     const index = Math.floor(Math.random() * options.length);
-    console.log(index);
+    document.querySelector('h1').textContent = options[index];
 }
 
 const addOption = (e) => {
@@ -16,6 +16,7 @@ const addOption = (e) => {
 const resetOptions = (e) => {
     e.preventDefault();
     options.length = 0;
+    document.querySelector('h1').textContent = "";
 }
 
 const showOptions = () => {
