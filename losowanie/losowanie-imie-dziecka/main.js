@@ -9,7 +9,7 @@ const prefixs = ["Wydaje mi się", "Mam wrażenie", "Szczerze powiedziawszy", "M
 const nameGenerator = () => {
     const indexName = Math.floor(Math.random() * names.length);
     const indexPrefixs = Math.floor(Math.random() * prefixs.length);
-    div.textContent = `${prefixs[indexPrefixs]} że najlepsze będzie imię ${names[indexName]}`
+    div.textContent = `${prefixs[indexPrefixs]}, że najlepsze będzie imię ${names[indexName]}`
 }
 
 btn.addEventListener('click', nameGenerator)
