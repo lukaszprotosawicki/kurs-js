@@ -1,6 +1,10 @@
 const btn = document.querySelector('button');
 
-const name = ["Beata", "Daria", "Karolina", "Lukasz", "Joanna", "Renata", "Bartek", "Dawid"];
+const names = ["Beata", "Daria", "Karolina", "Lukasz", "Joanna", "Renata", "Bartek", "Dawid"];
+
+const index = Math.floor(Math.random() * 8);
+console.log(names[index]);
+
 const nameGenerator = () => {
 
 }
