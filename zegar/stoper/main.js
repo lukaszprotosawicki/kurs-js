@@ -4,18 +4,32 @@ const panel = document.querySelector('.time div');
 
 let time = 0;
 let active = false;
+let idI;
 
 const timer = () => {
     if(!active) {
         active = !active;
         btnTime.textContent = 'Pauza';
+        idI = setInterval(start, 10);
     }
     else {
         active = !active;
          btnTime.textContent = 'Start';
+         clearInterval(idI)
      }
     
 
+}
+
+const start = () => {
+    time++;
+    panel.textContent = (time / 100).toFixed(2);
+
+}
+
+const reset = () => {
+    time = 0;
+    panel.textContent = '---';
 }
 
 btnTime.addEventListener('click', timer);
