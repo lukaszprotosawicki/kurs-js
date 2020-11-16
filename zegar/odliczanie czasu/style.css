@@ -1,0 +1,11 @@
+body {
+    background-color: black;
+    z-index: 1;
+}
+
+p, h1 {
+    font-family: monospace;
+    font-size: 22px;
+    color: white;
+}
+
