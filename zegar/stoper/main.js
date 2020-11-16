@@ -30,6 +30,9 @@ const start = () => {
 const reset = () => {
     time = 0;
     panel.textContent = '---';
+    active = false;
+    btnTime.textContent = 'Start';
+    clearInterval(idI)
 }
 
 btnTime.addEventListener('click', timer);
