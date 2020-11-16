@@ -1,0 +1,15 @@
+body {
+    background-color: gray;
+    text-align: center;
+}
+
+button {
+    font-size: 44px;
+    margin: 30px;
+
+    border-radius: 8px;
+}
+
+.time {
+    font-size: 44px;
+}
