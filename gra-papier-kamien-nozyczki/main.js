@@ -11,3 +11,13 @@ const game = {
     playerHandHTML: null,
 }
 
+const hands = document.querySelectorAll('.select img');
+
+function handSelection() {
+
+    game.playerHand = this.dataset.option
+    console.log(game.playerHand)
+}
+
+hands.forEach(hand => hand.addEventListener('click', handSelection))
+
