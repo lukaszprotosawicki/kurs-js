@@ -24,12 +24,20 @@ function aiChoice() {
     return hands[Math.floor(Math.random() * 3)].dataset.option;
 }
 
+function checkResult(player, ai) {
+    if(player === ai) {
+
+    }
+    else if((player === "papier" && ai === "kamień") || (player === "kamień" && ai === "nożyczki") || (player === "nożyczki" && ai === "papier"))
+}
+
 function startGame() {
     if(!game.playerHand) {
         return alert("Wybierz dłoń!!!")
     }
     
-    game.aiHand = computerChoice()
+    game.aiHand = computerChoice();
+    const gameResult = checkResult(game.playerHand, game.aiHand);
 
 }
 
