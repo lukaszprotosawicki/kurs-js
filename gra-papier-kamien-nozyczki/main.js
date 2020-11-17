@@ -6,8 +6,8 @@ const gameSummary = {
 }
 
 const game = {
-    playerHand: null,
-    aiHand: null,
+    playerHand: "",
+    aiHand: "",
 }
 
 const hands = [...document.querySelectorAll('.select img')];
@@ -20,5 +20,12 @@ function handSelection() {
     this.style.boxShadow = '0 0 0 4px black';
 }
 
+function startGame() {
+    if(game.playerHand === "") {
+        alert("Wybierz dłoń!!!")
+    }
+}
+
 hands.forEach(hand => hand.addEventListener('click', handSelection))
 
+document.querySelector('.start').addEventListener('click', startGame)
