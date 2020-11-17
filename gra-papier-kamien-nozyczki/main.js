@@ -40,6 +40,8 @@ function checkResult(player, ai) {
 function publishResult(player, ai, result) {
     document.querySelector('[data-summary="your-choice"]').textContent = player;
     document.querySelector('[data-summary="ai-choice"]').textContent = ai;
+
+    document.querySelector('p.numbers span').textContent = ++ gameSummary.numbers;
 }
 
 // funkcja sterująca
