@@ -21,9 +21,8 @@ function handSelection() {
 }
 
 function startGame() {
-    if(game.playerHand === "") {
-        alert("Wybierz dłoń!!!")
-    }
+    if(!game.playerHand) return alert("Wybierz dłoń!!!")
+    
 }
 
 hands.forEach(hand => hand.addEventListener('click', handSelection))
