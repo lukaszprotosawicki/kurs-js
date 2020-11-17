@@ -62,6 +62,10 @@ function publishResult(player, ai, result) {
         }
 }
 
+function endGame() {
+    document.querySelector('[data-option="' + game.playerHand + '"]').style.boxShadow = "";
+}
+
 // funkcja sterująca
 function startGame() {
     if(!game.playerHand) {
@@ -70,7 +74,8 @@ function startGame() {
     
     game.aiHand = aiChoice();
     const gameResult = checkResult(game.playerHand, game.aiHand);
-    publishResult(game.playerHand, game.aiHand, gameResult)
+    publishResult(game.playerHand, game.aiHand, gameResult);
+    endGame()
 
 }
 
