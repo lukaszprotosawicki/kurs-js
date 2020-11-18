@@ -8,7 +8,7 @@ div {
 
 .cursor {
     opacity: 0;
-    transition: .2s;
+    transition: .4s;
 }
 
 .cursor.active {
