@@ -1,21 +1,44 @@
-.object {
-    display: block;
-    width: 200px;
-    height: 40px;
-    background-color: rgb(62, 146, 62);
-}
-
-.buttonakordeon {
-    background-color: red;
-    padding: 4px;
-    margin: 3px;
-    float: right;
+html, body{
+    margin: 0;
+  }
+  
+  #olp1{
+    visibility: hidden;
+    background-color: #fa706b;
+      width: 100%;
+      height: 0;
+    text-align: center;
+    font-size: 200px;
+    transition: all 0.5s ease-in;
+    overflow:hidden;
+  }
+  
+  #olp1.faded {
+    height: 60vh;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  #olp2{
+    background-color: #041424;
+      width: 100%;
+      height: 120vh;
+    text-align: center;
+    padding-top: 70px;
+  }
+  
+  
+  #moz{
+    margin: 0 auto;
+    width: 200px;;
+      height: 80px;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 40px;
+    color: #fff;
+    padding-top: 30px;;
+  }
+  
+  #moz:hover{
     cursor: pointer;
-    font-size: 20px;
-    border: 2px solid black;
-}
-
-.panel {
-    width: 200px;
-    background-color: red;
-}
+  }
