@@ -1,4 +1,21 @@
 .object {
+    display: block;
     width: 200px;
-    background-color: green;
+    height: 40px;
+    background-color: rgb(62, 146, 62);
+}
+
+.buttonakordeon {
+    background-color: red;
+    padding: 4px;
+    margin: 3px;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.panel {
+    width: 200px;
+    background-color: red;
 }
